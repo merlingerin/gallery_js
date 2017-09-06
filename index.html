@@ -26,13 +26,16 @@
                     </div>
                     <div class="gallery__paggination">
                         <ul class="paggination__list">
-                            <li class="paggination__item active">
-                                <a class="paggination__link" href="#"><1></a>
+                            <li class="paggination__item">
+                                <a class="paggination__link link--prev" href="#" data-action="decreasPage"><< Prev</a>
                             </li>
                             <li class="paggination__item">
-                                <a class="paggination__link" href="#"><2></a>
+                                <span class="paggination__page page-number"> [ 1 ] </span>
                             </li>
                             <li class="paggination__item">
+                                <a class="paggination__link link--next active" href="#" data-action="increasPage">Next >></a>
+                            </li>
+                            <!-- <li class="paggination__item">
                                 <a class="paggination__link" href="#"><3></a>
                             </li>
                             <li class="paggination__item">
@@ -40,7 +43,7 @@
                             </li>
                             <li class="paggination__item">
                                 <a class="paggination__link" href="#"><5></a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>     
                 </div>
@@ -55,8 +58,8 @@
                     <span class="filter__title">Size</span>
                     <div class="filter__body">
                         <ul class="filter__list">
-                            <li class="filter__item active">
-                                <a href="#" class="filter__link" data-action="getLargePhoto">Large</a>
+                            <li class="filter__item">
+                                <a href="#" class="filter__link active" data-action="getLargePhoto">Large</a>
                             </li>
                             <li class="filter__item">
                                 <a href="#" class="filter__link" data-action="getMiddlePhoto">Medium</a>
@@ -79,7 +82,8 @@
         </aside>
     </main>
     <!-- Main -->
-    <footer class="footer"></footer>
+    <footer class="footer">
+    </footer>
     <!-- Footer -->
 </body>
 </html>

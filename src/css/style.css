@@ -11,6 +11,11 @@ a {
 img {
     width: 100%;
     height: auto;
+    display: inline-block;
+    min-height: 100px;
+    min-width: 100px;
+    background-image: url('../img/spinner.gif');
+    background-size: contain;
 }
 
 .container {
@@ -91,7 +96,7 @@ body {
     position: relative;
 }
 
-.filter__list .filter__item.active:before {
+.filter__list .filter__link.active:before {
     content: '';
     background-color: #263238;
     width: 10px;
@@ -151,7 +156,7 @@ body {
     list-style-type: none;
 }
 
-.paggination__list .paggination__item.active .paggination__link{
+.paggination__list .paggination__link.active{
     text-decoration: underline;
 }
 
@@ -159,5 +164,9 @@ body {
     text-decoration: none;
     margin-right: 3px;
     color: #000000;
+}
+
+.link--prev {
+    display: none;
 }
 /*End Paggination*/
