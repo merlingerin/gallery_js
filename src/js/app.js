@@ -6,15 +6,15 @@ var $ = (function(selector, context) {
         gallery = document.querySelector(selector + '');
     };
 
-    var gallery = '',
-        images = [],
-        pickedSize = '',
-        filteredArr = [],
-        searchArr = [],
-        currentPage = 0,
-        seachInput_value = '',
-        perPage = 20,
-        maxPage = 0;
+    var gallery = '',   /*gallery container*/
+        images = [],    /*array with fetched images from API*/
+        pickedSize = '',    /*active size from filter by size*/
+        filteredArr = [],   /*array filterd from images[] by size*/
+        searchArr = [],     /*array filtered from filteredArr[] by author*/
+        currentPage = 0,    /*current page in pagination*/
+        seachInput_value = '',  /*Value from serach input by author*/
+        perPage = 20,           /*max images per page*/
+        maxPage = 0;            /*computed props depends on used images array and images amount perPage*/
 
 
 

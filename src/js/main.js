@@ -2,10 +2,10 @@
 //Main js - Initialize all methods
 //////////////////////////////////
 window.addEventListener('DOMContentLoaded', function() {
-    $.init('.gallery__images');
-    $.inputSeach();
-    $.currentSize('.filter__list');
-    lightbox.init();
+    $.init('.gallery__images');    /* -------- Initialize App Gallery, '.gallery__images' - container for rendered images*/
+    $.inputSeach();                 /* -------- Initialize this method to activating search  */
+    $.currentSize('.filter__list'); /* --------- Inititialize this method for filtering images by size*/
+    lightbox.init();                /* --------- Custom lightbox lib with slider*/
 });
 
 window.addEventListener('load', function(){
